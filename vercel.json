@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pokebase-video-streaming-service",
+  "builds": [
+    { "src": "src/server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/src/server.js" }
+  ]
+}
